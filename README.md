@@ -20,8 +20,20 @@ This script installs the latest **OpenTelemetry Collector Contrib** on Debian-ba
 
 ## 🚀 Usage
 
-Make the script executable and run it:
+You can either **download and run the script**, or **run it directly from URL**:
+
+### Option 1: Download and run
 
 ```bash
+wget https://raw.githubusercontent.com/zdeneksvarc/install-otelcol-contrib-debian/main/install-otelcol-contrib-debian.sh
 chmod +x install-otelcol-contrib-debian.sh
 ./install-otelcol-contrib-debian.sh
+```
+
+### Option 2: Run directly from URL
+
+```bash
+bash <(curl -sSL https://raw.githubusercontent.com/zdeneksvarc/install-otelcol-contrib-debian/main/install-otelcol-contrib-debian.sh)
+```
+
+> ⚠️ Always review scripts before executing them directly from the internet.
