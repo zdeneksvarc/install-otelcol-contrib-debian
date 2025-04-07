@@ -6,12 +6,12 @@
 set -euo pipefail
 
 # Check if any OpenTelemetry Collector process is already running
-if pgrep -f 'otelcol' > /dev/null; then
+if pgrep -f '/otelcol' > /dev/null; then
   echo "An OpenTelemetry Collector process is already running."
   echo "Please stop it before running this installation script."
   echo
   echo "Matching processes:"
-  pgrep -a -f 'otelcol'
+  pgrep -a -f '/otelcol'
   exit 1
 fi
 
