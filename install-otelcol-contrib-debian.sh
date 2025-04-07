@@ -6,7 +6,7 @@
 set -euo pipefail
 
 # Check if any OpenTelemetry Collector process is already running
-if pgrep -f 'otelcol' > /dev/null; then
+if pgrep -af 'otelcol-contrib' | grep -v "$0" > /dev/null; then
   echo "An OpenTelemetry Collector process is already running."
   echo "Please stop it before running this installation script."
   echo
@@ -15,7 +15,7 @@ if pgrep -f 'otelcol' > /dev/null; then
   exit 1
 fi
 
-# ¨Check for Debian-based system
+# Check for Debian-based system
 if ! grep -qi "debian" /etc/os-release; then
   echo "This script is intended for Debian-based systems only."
   echo "Detected system:"
