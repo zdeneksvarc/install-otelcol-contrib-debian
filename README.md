@@ -14,9 +14,9 @@ This script installs the latest **OpenTelemetry Collector Contrib** on Debian-ba
 
 ## ⚙️ Requirements
 
-- Debian-based system (Debian, Ubuntu, etc.)
+- Debian-based system
 - `curl`, `jq`, `dpkg`, `systemctl`
-- Sudo/root privileges
+- sudo privileges
 
 ## 🧹 Uninstallation
 
