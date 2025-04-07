@@ -23,4 +23,5 @@ This script installs the latest **OpenTelemetry Collector Contrib** on Debian-ba
 To remove the OpenTelemetry Collector Contrib package from your system, run:
 
 ```bash
+sudo systemctl disable --now otelcol-contrib
 sudo apt remove otelcol-contrib
