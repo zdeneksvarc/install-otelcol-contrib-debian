@@ -17,3 +17,10 @@ This script installs the latest **OpenTelemetry Collector Contrib** on Debian-ba
 - Debian-based system (Debian, Ubuntu, etc.)
 - `curl`, `jq`, `dpkg`, `systemctl`
 - Sudo/root privileges
+
+## 🧹 Uninstallation
+
+To remove the OpenTelemetry Collector Contrib package from your system, run:
+
+```bash
+sudo apt remove otelcol-contrib
