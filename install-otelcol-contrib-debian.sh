@@ -31,12 +31,12 @@ echo "=============================================="
 echo
 
 # Check if any OpenTelemetry Collector process is already running
-if pgrep -af 'otelcol-contrib' | grep -v "$0" > /dev/null; then
+if pgrep -af 'otelcol' | grep -v "$0" > /dev/null; then
   echo "An OpenTelemetry Collector process is already running, this is likely unintentional."
   echo "Make sure there won't be any conflicts after installing otelcol-contrib package."
   echo
   echo "Matching processes:"
-  pgrep -af 'otelcol-contrib' | grep -v "$0"
+  pgrep -af 'otelcol' | grep -v "$0"
   echo
   read -p "Do you want to continue anyway? [y/N]: " confirm
   if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
