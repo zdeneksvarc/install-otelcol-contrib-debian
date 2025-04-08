@@ -6,7 +6,7 @@ This script installs the latest **OpenTelemetry Collector Contrib** on Debian-ba
 
 - Automatically detects architecture (`amd64` / `arm64`)
 - Ensures it's running on a Debian-based system
-- Detects and aborts if any `otelcol` process is already running
+- Detects any `otelcol` process if already running
 - Downloads the latest release from GitHub
 - Installs and starts the `otelcol-contrib` systemd service
 - Cleans up temporary files
